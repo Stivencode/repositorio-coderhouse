@@ -1,0 +1,125 @@
+@import "general";
+@import "cards";
+@import "footer";
+@import "form";
+
+$color_primary: #F9C846;
+$color_secundary: black;
+$bg-color: white;
+
+// header 
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $color_secundary;
+    h1 {
+        color: $bg-color;
+        text-decoration: none;
+        font-weight: 400;
+        span {
+            color: $color_primary;
+            text-decoration: none;
+            font-weight: 700;
+        }
+    }
+  }
+
+  .header-container .menu .navbar-expand-lg{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .inicio {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://i.ibb.co/HTgSkXy/slider-innovation.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 800px;
+    margin-left: 30px;
+    h1 {
+        font-size: 50px;
+        padding: 0;
+        text-shadow: 0px 3px 3px #000000;
+        span {
+            font-size: 50px;
+            color: $bg-color;
+        }
+    }
+    p {
+        color: $bg-color;
+        font-size: 15px;
+        font-weight: lighter;
+    }
+    a {
+        border: 2px solid $color_primary;
+        width: 150px;
+        height: 30px;
+        border-radius: 25px;
+        padding-top: 3px;
+    }
+  }
+
+  .container-main {
+    height: 300px;
+    width: 80%;
+    text-align: left;
+    a {
+        text-align: center;
+    }
+  }
+
+  .wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+  }
+
+  .container-me {
+    background-color: white;
+    color: #434343;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 40px;
+  }
+
+.col-md-6 {
+    img {
+        max-width: 80px;
+        border-radius: 50%;
+        border: 3px solid white;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+    p {
+        margin: 10px;
+    }
+  }
+
+  .section-img {
+    margin: 30px 0;
+    img {
+        margin: 0 10px 10px 0;
+    }
+  }

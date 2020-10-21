@@ -1,0 +1,56 @@
+$color_primary: #F9C846;
+$color_secundary: black;
+$bg-color: white;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: $bg-color;
+    font-family: 'Raleway', sans-serif;
+    color: $color_secundary;
+    text-align: center;
+  }
+
+  h1, h2, h3, h4, h5 {
+    color: $color_primary;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+  li a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    }
+}
+
+a {    
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  border-bottom: 1px solid transparent;
+  transition: 0.7s ease-out;
+  &:hover {
+    color: $color_primary;
+    text-decoration: none;
+    border-bottom: 1px solid $color_primary;
+  }
+ }
+
+.link-box {
+  color: $color_primary;
+  &:hover {
+    color: $color_primary;
+  }
+}

@@ -1,0 +1,96 @@
+$color_primary: #F9C846;
+$color_secundary: black;
+$bg-color: white;
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background-color: $color_secundary;
+    flex-direction: column;
+  }
+  
+  .effects {
+    font-size: 4em;
+    font-weight: 500;
+    color: #F9C846;
+    letter-spacing: 5px;
+    cursor: pointer;
+  }
+  .effects span {
+    transition: 1s;
+  }
+  
+  .effects:hover span:nth-child(1) {
+    margin-right: 10px;
+  }
+  
+  .effects:hover span:nth-child(1):after {
+    content: " IN YOURSELF";
+  }
+  
+  .effects:hover span {
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffffff,
+                 0 0 20px #ffffff,
+                 0 0 40px #ffffff,
+                 0 0 80px #ffffff,
+                 0 0 120px #ffffff,
+                 0 0 160px #ffffff;
+  }
+  
+  /*redes sociales*/
+  
+  .contenedor-redes {
+    padding: 25px 0;
+  }
+  
+  .redes {
+    position: relative;
+    display: flex;
+    li {
+        position: relative;
+        list-style: none;
+        a {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ffffff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 30px;
+            border-radius: 50%;
+            color: #e2e2e2;
+            box-shadow: inset -1px -1px 2px rgba(0,0,0,0.2),
+            2px 2px 5px rgba(0,0,0,0.2);
+            transition: 0.5s;
+            &:hover {
+                color: $color_primary;
+                transform: translateY(-20px);
+                box-shadow: inset -1px -1px 2px rgba(0,0,0,0.2),
+                2px 24px 10px rgba(0,0,0,0.1);
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+                border-radius: 50%;
+                border: 2px solid #F9C846;
+            }
+        }
+    }
+  }
+
+  .by {
+    color: white;
+    font-style: italic;
+  }
+  
